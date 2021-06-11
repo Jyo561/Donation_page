@@ -1,0 +1,146 @@
+:root {
+    --intro-bg: hsl(355, 100%, 66%);
+    --about-bg: hsl(355, 100%, 74%);
+    --headings-color: hsl(208, 49%, 24%);
+    --white-color: hsl(0, 0%, 100%);
+    --footer-text: hsl(240, 2%, 79%);
+    --body-copy: hsl(207, 13%, 34%);
+    --footer-bg: hsl(240, 10%, 16%);
+}
+.vis
+{
+  display: flex;
+  align-content: right;
+  visibility: hidden;
+}
+.menu{
+  display: flex;
+  align-content: right;
+}
+.menu-item{
+  
+}
+nav {
+    color: var(--white-color);
+    display: flex;
+    font-family: "Overpass";
+    font-size: 1rem;
+    font-weight: 600;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+}
+li{
+  list-style: none;
+}
+.intro
+{
+  box-shadow: 0 0.7px 0 0 #888888;
+  margin-top: -0.8%;
+  margin-left: -0.6%;
+  margin-right: -0.6%;
+  background-image: url(../images/Protruding-Squares.svg), linear-gradient(90deg, hsl(23, 100%, 72%) 10%,hsl(350, 100%, 62%) 80%);
+  background-position: -55vh -74.5vw, center;
+  background-repeat: no-repeat, no-repeat;
+  height: 110px;
+  border-radius: 0 0 70px 70px;
+  animation-name: animate;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.intro2
+{
+  margin-top: -0.1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-image: url(../images/Protruding-Squares.svg), linear-gradient(90deg, hsl(23, 100%, 72%) 10%,hsl(350, 100%, 62%) 80%);
+  background-position: -55vh -74.5vw, center;
+  background-repeat: no-repeat, no-repeat;
+  height: 60px;
+  border-radius: 0 0 70px 70px;
+  animation-name: animate;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+}
+.logo
+{
+  height: 150px;
+  display: flex;
+  padding: 1.0% 0 0 3.0%;
+  margin-top: -3.4%;
+}
+.arrow
+{
+  padding: 30.0% 0 0 0;
+transition: all 0.25s ease-in-out;
+}
+
+#login-button
+{
+    color: var(--white-color);
+    margin-top: 1.3%;
+    position: absolute;
+    right: 140px;
+    text-decoration: none;
+}
+#sign-up
+{
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 50px;
+    color: var(--intro-bg);
+    font-family: "Ubuntu";
+    font-size: 1rem;
+    font-weight: 700;
+    height: 40px;
+    margin-top: 0.4%;
+    position: absolute;
+    right: 0;
+    transition: all 0.25s ease-in-out;
+    width: 100px;
+}
+.login-sign-up {
+        background-color: var(--white-color);
+        border-radius: 0 0 5px 5px;
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        /* animation: animate 0.25s ease-in-out; */
+    }
+.org{
+  margin-top:-1.8%;
+}
+.nav2
+{
+  margin-top:-2.0%;
+  color: var(--white-color);
+  text-underline-offset: hidden;
+}
+ a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+blockquote
+{
+  font-size: 50%;
+}
+    /* **********SECTION-1-INTRO********** */
+    @keyframes animate 
+    {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 0.25;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+ 
+
