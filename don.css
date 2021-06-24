@@ -113,6 +113,7 @@ transition: all 0.25s ease-in-out;
 .nav2
 {
   margin-top:-2.0%;
+  margin-left: 50%;
   color: var(--white-color);
   text-underline-offset: hidden;
 }
