@@ -7,6 +7,8 @@
     --body-copy: hsl(207, 13%, 34%);
     --footer-bg: hsl(240, 10%, 16%);
 }
+@media screen and (max-width:1370px)
+{
 .vis
 {
   display: flex;
@@ -16,9 +18,15 @@
 .menu{
   display: flex;
   align-content: right;
+  margin-left: 49%;
 }
-.menu-item{
-  
+.menu2{
+display: flex;
+ align-content: right;
+margin-left:14.5%;
+}
+.menu-item2{
+  margin-left: 70%;
 }
 nav {
     color: var(--white-color);
@@ -35,7 +43,8 @@ li{
 }
 .intro
 {
-  box-shadow: 0 0.7px 0 0 #888888;
+  max-width: 1370px;
+  box-shadow: 0 0 0 0 #888888;
   margin-top: -0.8%;
   margin-left: -0.6%;
   margin-right: -0.6%;
@@ -45,7 +54,7 @@ li{
   height: 110px;
   border-radius: 0 0 70px 70px;
   animation-name: animate;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
 }
 .intro2
@@ -59,7 +68,7 @@ li{
   height: 60px;
   border-radius: 0 0 70px 70px;
   animation-name: animate;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
 }
 .logo
@@ -93,7 +102,7 @@ transition: all 0.25s ease-in-out;
     font-size: 1rem;
     font-weight: 700;
     height: 40px;
-    margin-top: 0.4%;
+    margin-top: 0.6%;
     position: absolute;
     right: 0;
     transition: all 0.25s ease-in-out;
@@ -107,13 +116,23 @@ transition: all 0.25s ease-in-out;
         visibility: visible;
         /* animation: animate 0.25s ease-in-out; */
     }
+blockquote
+{
+margin-left: 35%;
+}
+
+
 .org{
   margin-top:-1.8%;
+}
+.con
+{
+   margin-top:2%;
 }
 .nav2
 {
   margin-top:-2.0%;
-  margin-left: 50%;
+ 
   color: var(--white-color);
   text-underline-offset: hidden;
 }
@@ -125,6 +144,54 @@ transition: all 0.25s ease-in-out;
 blockquote
 {
   font-size: 50%;
+}
+
+/*************DONATE-PAGE************/
+.hea 
+{
+  margin-left: 43%;
+  margin-top:
+  color: hsl(23, 100%, 72%);
+}
+.card {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+   height: 100%;
+    width:300%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.doitem
+{
+ display: flex;
+}
+.men
+{
+  display: flex;
+  margin-left:-7%;
+}
+.fi
+{
+    margin-left: 100%;
+}
+.fi2
+{
+    margin-left: 173%;
+}
+.fi3
+{
+    margin-left: 253%;
+}
+.ima
+{
+  padding-left: 16%;
+}
+.card > p
+{
+   padding-left:10%;
+}
 }
     /* **********SECTION-1-INTRO********** */
     @keyframes animate 
