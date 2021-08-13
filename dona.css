@@ -14,8 +14,8 @@
 .form-box
 {
   top: 10%;
-  width: 25%;
-  height: 30%;
+  width: 35%;
+  height: 50%;
   position: relative;
   margin: 6% auto;
   background: #fff;
@@ -27,4 +27,8 @@
   padding: 2% 3%;
   box-shadow: 0 0 10px 9px;
   border-radius: 10px;
+  width: 80%;
+  position: relative;
+  height: 15%;
+  left: 9%;
 }
