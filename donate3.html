@@ -7,7 +7,8 @@
   <style type="text/css" media="all">
    .soe
    {
-     margin-top: 10%;
+     position: relative;
+     margin-top: 200%;
      text-align: center;
    }
    .logo
@@ -18,6 +19,7 @@
    }
     nav{
       border-radius: 0 0 30% 30%;
+      
     }
 	.opt
     {
@@ -56,12 +58,12 @@
     }
     .para
     {
-      margin-left: 25%;
+      padding-left: 25%;
       font-size: 150%;
     }
     .para2
     {
-      margin-left: 20%;
+      padding-left: 20%;
       font-size:150%;
     }
    #sign-up
@@ -101,35 +103,16 @@
   </style>
 </head>
 <body>
+  
  <div class="container-fluid">
-<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-warning">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" src="logo.png" alt="" /></a>
-        <button  class="navbar-toggler collapsed d-md-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <nav class="collapse navbar-collapse" id="navbarText">
-          <ul class="nav navbar-nav navbar-right text-center">
-           <li class="nav-item rt" id="nav1">
-             <a class="nav-link active" aria-current="page" href="#">Home</a>
-           </li>
-		   <li class="nav-item">                        <b><a class="nav-link active opt" href="#skills">Donate</a></b>
-		   </li>
-           <li class="nav-item rt" id="nav2">
-             <a class="nav-link active" href="#skills">Donate</a>
-           </li>
-		   <li class="nav-item">                             
-		   <a class="nav-link active opt" href="#skills">Donate</a>                                              
-		   </li>
-           <li class="nav-item rt" id="nav3">
-             <a class="nav-link active" href="#">Donatees' list</a>
-           </li>
-          </ul>
-          <a id="login-button" href="">Login</a>
-          <button type="submit" id="sign-up">Sign Up</button>
-        </nav>
-       </div>
-      </nav>
+   <div id="nav-placeholder">
+     
+   </div>
+   <div class="row">
+     <div class="col-md-12">
+      <h1 style="font-size:650%">Welcome</h1> 
+     </div>
+   </div>
   <div class="row soe">
     <div class="col-md-12">
       <h1 style="font-family:serif;font-style:Georgia;font-size:330%;color:green"><b><br>Welcome<br>to<br>Similipal Regen Fund</b></h1>
@@ -155,8 +138,8 @@
       So it is important that the forest cover is reinstated as soon as possible, which is possible only and only through reforestration.
     </div>
     <div class="col-md-6">
-      <img src="20210811_130050.jpeg" alt="" width="70%" height="30%"/><br><br><br>
-     <img class="" src="20210811_130101.jpeg" alt="" width="70%" height="30%"/>
+      <img src="tolly.jpeg" alt="" width="70%" height="30%"/><br><br><br>
+     <img class="" src="banner.jpeg" alt="" width="70%" height="30%"/>
     </div>
   </div>
   <div class="row highlight">
@@ -173,6 +156,11 @@
   <footer class="foot">
     <img class="logo2" src="logo.png" alt="" />
   </footer>
+  <script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+  </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>

@@ -66,15 +66,15 @@
 }
 #form2
 {
-  left: -500px;
+  left: 42%;
 }
 #form3
 {
-  left: -500px;
+  left: 56%;
 }
 #form4
 {
-  left: -500px;
+  left: 70%;
 }
 .form-box
 {
@@ -85,8 +85,8 @@
   margin: 6% auto;
   background: #fff;
   padding: 5px;
-  overflow: hidden;
   border-radius: 50px;
+  overflow: scroll;
 }
 .input-field
 {
@@ -118,9 +118,13 @@
 .bac 
 {
   margin-top: 14%;
-  left: -30%;
+  left: -40%;
   position: relative;
   text-decoration: underline;
+}
+.fg
+{
+  display: flex;
 }
 #google:hover
 {
@@ -134,15 +138,26 @@ box-shadow: 0 0 10px 9px #042e6f;
 {
 box-shadow: 0 0 10px 9px #6739B7;
 }
+
     </style>
     <link rel="stylesheet" href="dona.css" title="" type="" />
   </head>
 
   <body>
     <div class="hero container-fluid">
-      <div class="form-box">
-      <form class="input-group2" id="lol">
-        <h2 style="left:9.5%;top:3%;text-decoration:underline;position:relative">Choose Paymemt Method</h2>
+<div id="nav-placeholder">
+     
+   </div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+      <br><br><br>
+      <div class="form-box fg">
+      <div class="">
+<form class="input-group2" id="lol">
+        <h2 style="left:9.5%;top:3%;text-decoration:underline;position:relative">Choose Payment Method</h2>
        <br>
         <div class="boxes" id="google" onclick="gForm()">
           <h2 style="padding-top:2%;position:relative"><img class="pgpay" src="gpay.png" alt="" />Google Pay<span class="gpay">-></span>
@@ -161,6 +176,8 @@ box-shadow: 0 0 10px 9px #6739B7;
           </h2>
         </div>
       </form>
+      </div>
+       <div style="display:flex">
        <form class="input-group" id="form2">
         <input type="email" class="input-field" placeholder="abc@gmail.com"/>
         <input type="text" class="input-field" placeholder="First Name" required=""/>
@@ -194,6 +211,7 @@ box-shadow: 0 0 10px 9px #6739B7;
        </div>
         <span onclick="backIt()" class="bac"><-Back</span>
        </form>
+       </div>
       </div>
     </div>
     <script>
@@ -207,31 +225,31 @@ box-shadow: 0 0 10px 9px #6739B7;
       
       function gForm()
       {
-        x.style.left="5%";
-        y.style.left="-500px";
-        z.style.left="-500px";
+        x.style.left="2%";
+        y.style.left="56%";
+        z.style.left="70%";
         a.style.left="-700px";
       }
       function payForm()
       {
-        y.style.left="5%";
-        x.style.left="-500px";
-        z.style.left="-500px";
+        y.style.left="-31.5%";
+        x.style.left="56%";
+        z.style.left="70%";
         a.style.left="-700px";
       }
       function pForm()
       {
-        z.style.left="5%";
-        y.style.left="-500px";
-        x.style.left="-500px";
+        z.style.left="-65%";
+        y.style.left="56%";
+        x.style.left="70%";
         a.style.left="-700px";
       }
       function backIt()
       {
         a.style.left="0%";
-        y.style.left="-500px";
-        z.style.left="-500px";
-        x.style.left="-500px";
+        y.style.left="42%";
+        z.style.left="56%";
+        x.style.left="70%";
       }
     </script>
   </body>
