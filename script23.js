@@ -1,15 +1,16 @@
  $("#nav1").click( function(){
-   $("#nav1").css("background-color","white");
-   $("#nav2").css("background-color","#ffc107");
-   $("#nav3").css("background-color","#ffc107");
+    $("#nav2").classList.remove("mystyle");
+    $("#nav3").classList.remove("mystyle");
+    $("#nav1").classList.add("mystyle");
  });
 $("#nav2").click( function(){
-   $("#nav1").css("background-color","#ffc107");
-   $("#nav2").css("background-color","white");
-   $("#nav3").css("background-color","#ffc107");
+    $("#nav1").classList.remove("mystyle");
+    $("#nav3").classList.remove("mystyle");
+    $("#nav2").classList.add("mystyle");
  });
 $("#nav3").click( function(){
-   $("#nav1").css("background-color","#ffc107");
-   $("#nav2").css("background-color","#ffc107");
-   $("#nav3").css("background-color","white");
+    $("#nav2").classList.remove("mystyle");
+    $("#nav1").classList.remove("mystyle");
+    $("#nav3").classList.add("mystyle");
  });
+
